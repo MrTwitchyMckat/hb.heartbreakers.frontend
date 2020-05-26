@@ -1,0 +1,87 @@
+.header {
+  display: flex;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  margin-top: -150px;
+  background-image: url("../../images/header-image.jpg");
+  background-size: cover;
+}
+
+.header__content {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  top: 60%;
+  justify-content: center;
+}
+
+.header__title {
+  h1 {
+    font-weight: 300;
+    text-transform: lowercase;
+    color: $color-white;
+    letter-spacing: 2px;
+  }
+}
+
+.header__year {
+  display: block;
+  width: 100px;
+  position: absolute;
+  right: 0;
+  top: 25%;
+  opacity: 25%;
+  @include media(">=1920px") {
+    width: 150px;
+  }
+}
+
+.header__scroll {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+}
+
+.header__scroll-line {
+  display: block;
+  height: 150px;
+  width: 2px;
+  background-color: $color-white;
+  animation: scroll-line 2s linear infinite;
+}
+
+.header__scroll-text {
+  display: block;
+  position: absolute;
+  margin-top: -40px;
+  margin-left: -17px;
+  font-family: "Poppins", sans-serif;
+  color: $color-white;
+  font-weight: 300;
+  transform: rotate(90deg);
+}
+
+@keyframes scroll-line {
+  0% {
+    transform-origin: top;
+    transform: scaleY(0);
+  }
+  30% {
+    transform-origin: top;
+    transform: scaleY(0);
+  }
+  50% {
+    transform-origin: top;
+    transform: scaleY(1);
+  }
+  51% {
+    transform-origin: bottom;
+    transform: scaleY(1);
+  }
+  100% {
+    transform-origin: bottom;
+    transform: scaleY(0);
+  }
+}
