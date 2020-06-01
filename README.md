@@ -1,11 +1,27 @@
-#Heartbreaker Clothing Co Frontend
-This repo uses React.js bootstrapped with create-react-app.
+# HB Frontend
 
-##Local Development
-Run `npm install` after cloning the repo.
-Run `npm start` to start local environment.
+Frontend landing page for heart breakers clothing co. Links out to Shopify shop site at shop.heartbreakers.io. Built using React (create-react-app) and SASS (SCSS).
 
-##Things used
-`/vendor/sass` includes the include-media library for sass.
-`node-sass` is used for sass dev.
-`flexboxgrid-sass` is used for grid.
+## Installation
+
+Use the package manager npm to install dependancies.
+
+```bash
+npm install
+```
+
+## Libraries
+
+```javascript
+masonry - https://masonry.desandro.com/
+include-media - https://github.com/eduardoboucas/include-media
+flexbox grid - http://hugeinc.github.io/flexboxgrid-sass/
+node-sass - https://www.npmjs.com/package/node-sass
+imagesLoaded - https://imagesloaded.desandro.com/
+jquery - https://jquery.com/
+
+```
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
