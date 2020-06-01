@@ -1,0 +1,48 @@
+.lookbook {
+  padding: 40px 0;
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+.lookbook__headline {
+  h2 {
+    display: inline-flex;
+    color: $color-red;
+    text-transform: lowercase;
+    font-weight: 600;
+    font-style: italic;
+    padding-left: 120px;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 50px;
+      width: 100px;
+      background-image: url("../../images/left-edge-red.svg");
+      background-repeat: no-repeat;
+      margin-left: -120px;
+      margin-top: 25px;
+    }
+  }
+  .lookbook__subhead {
+    font-family: "Poppins", "sans-serif";
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: $color-red;
+  }
+}
+
+.lookbook__container {
+  background-position: right;
+  background-attachment: fixed;
+  background-size: 15%;
+}
+
+.end-page-icon {
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  background-image: url("../../images/left-edge-bottom-red.svg");
+  background-repeat: no-repeat;
+}

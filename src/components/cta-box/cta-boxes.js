@@ -14,7 +14,11 @@ class CTABoxes extends Component {
               <CTABox image={LeftImage} title="Online Shop" />
             </div>
             <div className="col-xs-6 no-pad-marg">
-              <CTABox image={RightImage} title="2020 Summer Look" />
+              <CTABox
+                image={RightImage}
+                title="2020 Summer Look"
+                link="#lookbook"
+              />
             </div>
           </div>
         </div>

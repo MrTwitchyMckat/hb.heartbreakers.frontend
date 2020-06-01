@@ -1,9 +1,42 @@
 .nav {
   display: flex;
   justify-content: center;
-  height: 150px;
+  width: 100%;
+  height: 90px;
+  padding-top: 60px;
   position: relative;
-  z-index: 2;
+  z-index: 9;
+  translate: 0;
+  transition: all ease-in-out 0.8s;
+  &.scrolled {
+    position: fixed;
+    height: 90px;
+    padding-top: 0;
+    .nav__logo {
+      img {
+        width: 40%;
+      }
+    }
+    .nav__button {
+      span.menu-bar {
+        background-color: $color-red;
+      }
+    }
+    background: rgba(255, 255, 255, 0.9);
+    transform: translate(0, -150px);
+    opacity: 0;
+    animation: slideDown 0.8s forwards;
+  }
+  @keyframes slideDown {
+    0% {
+      transform: translate(0, -150px);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
 }
 
 .nav__container {
@@ -55,4 +88,122 @@
       }
     }
   }
+}
+
+.drawer-nav__container {
+  display: flex;
+  max-width: 25vw;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  background-color: $color-red;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  transition: all ease-in-out 0.3s;
+}
+
+.drawer-nav__items {
+  padding-top: 100px;
+  width: 50%;
+  justify-content: center;
+  ul {
+    list-style: none;
+    li {
+      padding: 10px 10px;
+      margin: 30px 0;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+      a {
+        color: $color-white;
+        text-decoration: none;
+        font-family: "Poppins";
+        font-size: 1.25rem;
+        transition: all ease 0.4s;
+        position: absolute;
+      }
+      &:before {
+        transition: all ease 0.4s;
+      }
+      &:hover {
+        a {
+          font-size: 1.4rem;
+        }
+        &:before {
+          background-size: 1.4rem;
+          width: 1.4rem;
+          height: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+.icon-account {
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../../images/icons/user-circle-solid.svg");
+    background-size: 20px;
+    margin-left: -35px;
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+    transition: all ease 0.8s;
+  }
+}
+.icon-shopping {
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../../images/icons/shopping-bag-solid.svg");
+    background-size: 20px;
+    margin-left: -35px;
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+  }
+}
+.icon-look {
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../../images/icons/glasses-regular.svg");
+    background-size: 20px;
+    margin-left: -35px;
+    margin-top: 7px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+  }
+}
+.close-icon {
+  display: flex;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 5%;
+  top: 2.5%;
+  transition: all ease-in-out;
+  img {
+    width: 30px;
+    transition: all linear 0.3s;
+  }
+  &:hover {
+    cursor: pointer;
+    img {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.closed {
+  transform: translate(100vw);
+  transition: all ease-in-out 0.5s;
 }

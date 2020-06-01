@@ -1,9 +1,10 @@
 .cta-box__container {
   display: flex;
   min-height: 50vh;
-  background-size: 100%;
+  background-size: 110%;
   background-position: center center;
   transition: all ease 0.8s;
+  background-repeat: no-repeat;
   &:before {
     content: "";
     display: flex;
@@ -25,6 +26,19 @@
       background-color: $color-red;
     }
   }
+  @include media("<=1200px") {
+    background-size: 150%;
+    &:hover {
+      background-size: 175%;
+    }
+  }
+
+  @include media("<=880px") {
+    background-size: cover;
+    &:hover {
+      background-size: cover;
+    }
+  }
 }
 .cta-box__text {
   font-family: "Poppins", sans-serif;
@@ -34,4 +48,7 @@
   font-size: 2rem;
   text-transform: lowercase;
   transition: all ease 0.5s;
+}
+a {
+  text-decoration: none;
 }
