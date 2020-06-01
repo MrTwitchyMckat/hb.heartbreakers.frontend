@@ -1,5 +1,6 @@
 {
   "name": "hb.heartbreakers.frontend",
+  "homepage": "https://heartbreakers.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

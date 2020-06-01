@@ -22,6 +22,16 @@ jquery - https://jquery.com/
 
 ```
 
+## Location
+
+After changes create a new production build by using:
+
+```bash
+npm run build
+```
+
+This is a single page app, and the `build` directory should be uploaded to the `public_html` directory on Hostinger.
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
