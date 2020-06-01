@@ -3,6 +3,9 @@
 }
 .grid {
   background: transparent;
+  @include media("<=768px") {
+    height: 100% !important;
+  }
 }
 
 /* clear fix */
@@ -22,6 +25,12 @@
 .grid-item {
   float: left;
   padding: 20px;
+  @include media("<=768px") {
+    position: relative !important;
+    width: 100% !important;
+    left: initial !important;
+    top: initial !important;
+  }
 }
 
 .grid-item img {

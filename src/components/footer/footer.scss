@@ -6,6 +6,9 @@
 .footer__logo {
   width: 25%;
   padding: 20px;
+  @include media("<=768px") {
+    width: 100%;
+  }
 }
 .footer__site-links {
   width: 100%;

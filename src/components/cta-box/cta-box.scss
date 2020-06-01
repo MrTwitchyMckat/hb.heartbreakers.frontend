@@ -48,6 +48,9 @@
   font-size: 2rem;
   text-transform: lowercase;
   transition: all ease 0.5s;
+  @include media("<=768px") {
+    font-size: 1.75rem;
+  }
 }
 a {
   text-decoration: none;

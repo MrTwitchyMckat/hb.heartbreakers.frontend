@@ -6,6 +6,9 @@
   margin-top: -150px;
   background-image: url("../../images/header-image.jpg");
   background-size: cover;
+  @include media("<=768px") {
+    background-position: center;
+  }
 }
 
 .header__content {

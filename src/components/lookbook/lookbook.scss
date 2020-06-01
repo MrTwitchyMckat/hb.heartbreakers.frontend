@@ -23,12 +23,21 @@
       margin-left: -120px;
       margin-top: 25px;
     }
+    @include media("<=768px") {
+      &:before {
+        content: none;
+      }
+      padding: 0px;
+    }
   }
   .lookbook__subhead {
     font-family: "Poppins", "sans-serif";
     font-weight: 300;
     font-size: 2.5rem;
     color: $color-red;
+    @include media("<=768px") {
+      font-size: 1.5rem;
+    }
   }
 }
 
