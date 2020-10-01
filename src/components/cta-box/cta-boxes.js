@@ -8,12 +8,12 @@ class CTABoxes extends Component {
   render() {
     return (
       <div className="row">
-        <div className="col-xs-12">
+        <div className="col-sm-12">
           <div className="row">
-            <div className="col-xs-6 no-pad-marg">
+            <div className="col-sm-6 no-pad-marg">
               <CTABox image={LeftImage} title="Online Shop" />
             </div>
-            <div className="col-xs-6 no-pad-marg">
+            <div className="col-sm-6 no-pad-marg">
               <CTABox
                 image={RightImage}
                 title="2020 Summer Look"

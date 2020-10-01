@@ -7,7 +7,7 @@ class Header extends Component {
       <div className="header">
         <div className="header__content">
           <div className="header__title">
-            <h1>Summer 2020</h1>
+            <h1>Fall 2020</h1>
           </div>
         </div>
         <div className="header__year">
