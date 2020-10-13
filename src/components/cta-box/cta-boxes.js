@@ -7,7 +7,7 @@ import RightImage from "../../images/right-cta-box.jpg";
 class CTABoxes extends Component {
   render() {
     return (
-      <div className="row">
+      <div className="row cta-box">
         <div className="col-sm-12">
           <div className="row">
             <div className="col-sm-6 no-pad-marg">
@@ -16,7 +16,7 @@ class CTABoxes extends Component {
             <div className="col-sm-6 no-pad-marg">
               <CTABox
                 image={RightImage}
-                title="2020 Summer Look"
+                title="2020 Fall Look"
                 link="#lookbook"
               />
             </div>

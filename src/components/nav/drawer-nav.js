@@ -18,14 +18,14 @@ class DrawerNav extends Component {
         </span>
         <div className="drawer-nav__items">
           <ul>
-            <li className="icon-account">
-              <a href="https://heartbreakers.io/account">Account</a>
-            </li>
             <li className="icon-shopping">
-              <a href="https://heartbreakers.io">Online Shop</a>
+              <a href="https://shop.heartbreakers.io" target="_blank">Online Shop</a>
             </li>
             <li className="icon-look">
               <a href="#lookbook">Lookbook</a>
+            </li>
+            <li className="icon-instagram">
+              <a href="https://instagram.com/heartbreakers.io" target="blank">@heartbreakers.io</a>
             </li>
           </ul>
         </div>

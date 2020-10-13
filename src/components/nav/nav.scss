@@ -164,17 +164,18 @@
   }
 }
 
-.icon-account {
+.icon-instagram {
   &:before {
     content: "";
     display: block;
     position: absolute;
-    background-image: url("../../images/icons/user-circle-solid.svg");
+    background-image: url("../../images/icons/instagram-brands.svg");
     background-size: 20px;
+    background-repeat: no-repeat;
     margin-left: -35px;
     margin-top: 5px;
     width: 20px;
-    height: 20px;
+    height: 30px;
     transition: all ease 0.8s;
   }
 }

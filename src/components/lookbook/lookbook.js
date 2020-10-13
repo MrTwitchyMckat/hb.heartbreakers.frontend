@@ -16,7 +16,7 @@ class Lookbook extends Component {
               <div className="lookbook__headline row">
                 <div className="col-xs-12">
                   <h2>Lookbook</h2>
-                  <span className="lookbook__subhead">// summer 2020</span>
+                  <span className="lookbook__subhead">// Fall 2020</span>
                 </div>
               </div>
               <MasonryGrid />
