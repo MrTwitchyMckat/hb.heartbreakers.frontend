@@ -11,7 +11,7 @@ class CTABoxes extends Component {
         <div className="col-sm-12">
           <div className="row">
             <div className="col-sm-6 no-pad-marg">
-              <CTABox image={LeftImage} title="Online Shop" />
+              <CTABox image={LeftImage} title="Online Shop" link="https://shop.heartbreakers.io"/>
             </div>
             <div className="col-sm-6 no-pad-marg">
               <CTABox

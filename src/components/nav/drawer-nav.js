@@ -24,9 +24,9 @@ class DrawerNav extends Component {
             <li className="icon-look">
               <a href="#lookbook">Lookbook</a>
             </li>
-            <li className="icon-instagram">
+            {/* <li className="icon-instagram">
               <a href="https://instagram.com/heartbreakers.io" target="blank">@heartbreakers.io</a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </nav>

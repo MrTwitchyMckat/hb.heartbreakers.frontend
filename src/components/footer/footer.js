@@ -18,9 +18,9 @@ class Footer extends Component {
                 <li className="icon-look">
                   <a href="#lookbook">Lookbook</a>
                 </li>
-                <li className="icon-instagram">
-                  <a href="https://instagram.com/heartbreakers.io" target="blank">@heartbreaker.io</a>
-                </li>
+                {/* <li className="icon-instagram">
+                  <a href="https://instagram.com/heartbreakers.io" target="blank">@heartbreakers.io</a>
+                </li> */}
               </ul>
             </div>
             <div className="footer__copyright">
