@@ -15,9 +15,6 @@
     .nav__logo {
       img {
         width: 40%;
-        @include media("<=768px") {
-          width: 80%;
-        }
       }
     }
     .nav__button {
