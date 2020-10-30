@@ -1,8 +1,6 @@
 import React from "react";
-
 //import main css
 import "./App.scss";
-
 //Import components
 import Nav from "./components/nav/nav";
 import DrawerNav from "./components/nav/drawer-nav";
